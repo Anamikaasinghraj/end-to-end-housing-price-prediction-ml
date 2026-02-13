@@ -119,27 +119,6 @@ Evaluation Metrics:
 
 ---
 
-## ▶️ How to Run
-
-1. Download dataset from Kaggle  
-2. Place `train.csv` in the project directory  
-3. Open `house_price_prediction.ipynb`  
-4. Run all cells  
-
----
-
-## 📂 Repository Structure
-end-to-end-housing-price-prediction-ml/
-│
-├── house_price_prediction.ipynb
-├── IFYOUF~1.JPG
-├── Screenshot 2026-02-13 182942.png
-├── README.md
-└── requirements.txt
-
-
----
-
 ## 👩‍💻 Author
 
 **Anamika Singh Raj**  
