@@ -1,96 +1,150 @@
 # 🏠 End-to-End Housing Price Prediction (Machine Learning)
-<p align="center"> <img src="IFYOUF~1.JPG" width="800"> </p>
 
-📌 Project Overview
+<p align="center">
+  <img src="IFYOUF~1.JPG" width="800">
+</p>
 
-This project implements a complete machine learning pipeline to predict residential property prices using regression and boosting algorithms.
+---
 
-The workflow follows an industry-standard approach including:
+## 📌 Project Overview
 
-Data cleaning and preprocessing
+This project develops a complete end-to-end machine learning pipeline to predict residential property prices using regression and ensemble boosting algorithms.
 
-Feature engineering
+The solution follows an industry-standard workflow including:
 
-Cross-validation model comparison
+- Data cleaning and preprocessing  
+- Feature engineering  
+- Cross-validation model comparison  
+- Hyperparameter tuning  
+- Model performance evaluation and error analysis  
 
-Hyperparameter tuning
+The objective is to build a robust predictive model capable of generalizing well to unseen housing data.
 
-Model performance evaluation and error analysis
+---
 
-📊 Dataset
+## 📊 Dataset
 
-House Prices – Advanced Regression Techniques
-Source: Kaggle
+**House Prices – Advanced Regression Techniques**  
+Source: Kaggle  
 
-🔎 Exploratory Data Analysis
-Correlation Heatmap
-<p align="center"> <img src="Screenshot 2026-02-13 182942.png" width="700"> </p>
+This dataset contains 79 explanatory variables describing residential homes, including structural, location-based, and economic attributes.
 
-Key Insights:
+---
 
-Median Income shows strong positive correlation with house value.
+## 🔎 Exploratory Data Analysis
 
-Total Rooms, Bedrooms, and Households are highly correlated.
+### Correlation Heatmap
 
-Location variables (latitude & longitude) influence pricing patterns.
+<p align="center">
+  <img src="Screenshot 2026-02-13 182942.png" width="700">
+</p>
 
-⚙️ Machine Learning Pipeline
-1️⃣ Data Preprocessing
+### Key Insights
 
-Missing value imputation (median & most frequent)
+- Median income shows strong positive correlation with house value.
+- Total rooms, bedrooms, and households are highly correlated.
+- Location variables (latitude & longitude) influence pricing patterns.
+- Non-linear relationships justify use of boosting models.
 
-One-hot encoding of categorical features
+---
 
-Feature scaling of numerical variables
+## ⚙️ Machine Learning Pipeline
 
-Implemented using ColumnTransformer and Pipeline.
+### 1️⃣ Data Preprocessing
 
-2️⃣ Feature Engineering
+- Missing value imputation (median for numerical, most frequent for categorical)
+- One-hot encoding of categorical variables
+- Feature scaling for numerical variables
+- Implemented using `ColumnTransformer` and `Pipeline`
 
-Derived additional ratio-based features
+---
 
-Removed redundant columns
+### 2️⃣ Feature Engineering
 
-Improved predictive performance through transformations
+- Derived additional ratio-based features
+- Removed redundant columns
+- Improved predictive performance through structured transformations
 
-3️⃣ Model Comparison (Cross-Validation)
+---
+
+### 3️⃣ Model Comparison (Cross-Validation)
 
 Models evaluated using K-Fold Cross Validation:
 
-Linear Regression
-
-Ridge Regression
-
-Lasso Regression
-
-Random Forest Regressor
-
-HistGradientBoosting Regressor
+- Linear Regression  
+- Ridge Regression  
+- Lasso Regression  
+- Random Forest Regressor  
+- HistGradientBoosting Regressor  
 
 Evaluation Metrics:
 
-RMSE
+- Root Mean Squared Error (RMSE)  
+- Mean Absolute Error (MAE)  
+- R² Score  
 
-MAE
+---
 
-R² Score
+### 4️⃣ Hyperparameter Tuning
 
-🛠 Tech Stack
+- Applied `GridSearchCV` to optimize boosting model performance
+- Selected best parameters based on cross-validation results
 
-Python
+---
 
-Pandas
+### 5️⃣ Model Evaluation
 
-NumPy
+- Compared cross-validation scores
+- Analyzed residual distribution
+- Evaluated predicted vs actual house prices
 
-Scikit-learn
+---
 
-Matplotlib
+## 📈 Results & Observations
 
-Seaborn
+- Boosting models outperformed linear regression models.
+- Cross-validation improved reliability of performance estimates.
+- Feature engineering significantly enhanced prediction accuracy.
 
-👤 Author
+---
 
-Anamika Singh Raj
-Aspiring Data Analyst / Machine Learning Engineer
+## 🛠 Tech Stack
+
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+
+---
+
+## ▶️ How to Run
+
+1. Download dataset from Kaggle  
+2. Place `train.csv` in the project directory  
+3. Open `house_price_prediction.ipynb`  
+4. Run all cells  
+
+---
+
+## 📂 Repository Structure
+end-to-end-housing-price-prediction-ml/
+│
+├── house_price_prediction.ipynb
+├── IFYOUF~1.JPG
+├── Screenshot 2026-02-13 182942.png
+├── README.md
+└── requirements.txt
+
+
+---
+
+## 👩‍💻 Author
+
+**Anamika Singh Raj**  
+Aspiring Data Analyst | Machine Learning Enthusiast
+
+
+
 
